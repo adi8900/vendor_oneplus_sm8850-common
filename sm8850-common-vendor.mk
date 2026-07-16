@@ -12,9 +12,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/init.oplus.sensor.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.oplus.sensor.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/init.oppo.reserve.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.oppo.reserve.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/init.touchDaemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.touchDaemon.rc \
+    vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.face@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.face@1.0-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V11-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V11-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
+    vendor/oneplus/sm8850-common/proprietary/odm/init.oplus.face.rc:$(TARGET_COPY_OUT_ODM)/init.oplus.face.rc \
     vendor/oneplus/sm8850-common/proprietary/product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.android.hotwordenrollment.common.util.xml \
     vendor/oneplus/sm8850-common/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/horae/horae.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/horae/horae.conf \
@@ -987,6 +989,7 @@ PRODUCT_PACKAGES += \
     manifest_oplus_charger_aidl.xml \
     manifest_oplus_cwb_aidl.xml \
     manifest_oplus_displaypanelfeature_aidl.xml \
+    manifest_oplus_face.xml \
     manifest_touch_aidl.xml \
     vintf_manifext_aidl_panelchaplin.xml \
     C2PAInternetService \
@@ -1090,6 +1093,7 @@ PRODUCT_PACKAGES += \
     cwb_utils_aidl \
     gauged \
     ufcsd \
+    vendor.oplus.hardware.biometrics.face@1.0-service_uff \
     vendor.oplus.hardware.charger-V11-service \
     vendor.oplus.hardware.displaypanelfeature-service \
     wlschgd \
