@@ -16,6 +16,7 @@ service vendor.dpmd /vendor/bin/vendor.dpmd
     #socket tcm  stream 660 root inet
     #socket dpmwrapper stream 660 root inet
     group system readproc inet radio wakelock oem_2901
+    interface aidl vendor.qti.hardware.dpmaidlservice.IDpmService/default
     disabled
 
 on property:persist.vendor.dpm.vndr.feature=*

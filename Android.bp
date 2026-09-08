@@ -27331,6 +27331,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.dpmservice@1.1",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.qti.hardware.dpmservice@1.1.so",
+            ],
+            shared_libs: [
+                "vendor.qti.hardware.dpmservice@1.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.ims.datachannelservice-V2-ndk",
     owner: "oneplus",
     strip: {
@@ -28270,6 +28299,33 @@ dex_import {
     owner: "oneplus",
     jars: [
         "proprietary/system_ext/framework/qcrilhook.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.hardware.dpmaidlservice-V1-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.hardware.dpmaidlservice-V1-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.hardware.dpmservice-V1.0-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.hardware.dpmservice-V1.0-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.hardware.dpmservice-V1.1-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.hardware.dpmservice-V1.1-java.jar",
     ],
     system_ext_specific: true,
 }

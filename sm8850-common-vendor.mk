@@ -1514,6 +1514,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ImsRtpService-V2-ndk \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dpmservice@1.0 \
+    vendor.qti.hardware.dpmservice@1.1 \
     vendor.qti.ims.datachannelservice-V2-ndk \
     vendor.qti.ims.datachannelservice-V3-ndk \
     vendor.qti.imsrtpservice@3.0 \
@@ -1559,6 +1560,9 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
+    vendor.qti.hardware.dpmaidlservice-V1-java \
+    vendor.qti.hardware.dpmservice-V1.0-java \
+    vendor.qti.hardware.dpmservice-V1.1-java \
     vendor.qti.ims.connection-V1.0-java \
     vendor.qti.ims.connectionaidlservice-V1-java \
     vendor.qti.ims.datachannelservice-V2-java \
