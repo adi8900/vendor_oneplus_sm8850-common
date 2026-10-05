@@ -21182,7 +21182,7 @@ cc_prebuilt_binary {
                 "libhwbinder",
                 "libutils",
                 "libbinder_ndk",
-                "libtinyxml2-v36",
+                "libtinyxml2",
                 "libc++",
                 "libc",
                 "libm",
